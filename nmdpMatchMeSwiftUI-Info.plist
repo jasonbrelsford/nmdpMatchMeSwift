@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<dict>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>This app writes HLA and LOINC-coded medical data to HealthKit for donor matching purposes.</string>
+    <key>NSHealthShareUsageDescription</key>
+    <string>We use HealthKit to read genetic data for donor matching.</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>PrivacyPrivacy – Health Share Usage Description</key>
+	<string>NSHealthShareUsageDescription</string>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>CFBundleExecutable</key>
+	<string></string>
+	<key>CFBundleName</key>
+	<string></string>
+	<key>LSApplicationCategoryType</key>
+	<string>This app writes HLA and LOINC-coded medical data to HealthKit for donor matching purposes.</string>
+</dict>
 </plist>

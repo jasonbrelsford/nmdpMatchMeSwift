@@ -18,10 +18,12 @@
 		5A6A188C2DEF8A250078E07D /* AiChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6A18852DEF8A250078E07D /* AiChatView.swift */; };
 		5A6A188D2DEF8A250078E07D /* HlaResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6A18872DEF8A250078E07D /* HlaResultView.swift */; };
 		5A6A188E2DEF8A250078E07D /* MatchLikelihoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6A18892DEF8A250078E07D /* MatchLikelihoodView.swift */; };
-		5A6A188F2DEF8A250078E07D /* NmdpMatchMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6A188A2DEF8A250078E07D /* NmdpMatchMeApp.swift */; };
 		5A6A18902DEF8A250078E07D /* DrugInteractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6A18862DEF8A250078E07D /* DrugInteractionView.swift */; };
 		5A6A18912DEF8A250078E07D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6A18882DEF8A250078E07D /* LoginView.swift */; };
 		5A6A18922DEF8A250078E07D /* TiktokFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6A188B2DEF8A250078E07D /* TiktokFeedView.swift */; };
+		5A90C7342DFA216F00E7E3E0 /* HLAIntegrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A90C7332DFA216F00E7E3E0 /* HLAIntegrationView.swift */; };
+		5A90C7362DFA218200E7E3E0 /* NmdpMatchMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A90C7352DFA218200E7E3E0 /* NmdpMatchMeApp.swift */; };
+		5A90C7382DFA219300E7E3E0 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A90C7372DFA219300E7E3E0 /* HealthKitManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +62,11 @@
 		5A6A18872DEF8A250078E07D /* HlaResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HlaResultView.swift; sourceTree = "<group>"; };
 		5A6A18882DEF8A250078E07D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5A6A18892DEF8A250078E07D /* MatchLikelihoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLikelihoodView.swift; sourceTree = "<group>"; };
-		5A6A188A2DEF8A250078E07D /* NmdpMatchMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NmdpMatchMeApp.swift; sourceTree = "<group>"; };
 		5A6A188B2DEF8A250078E07D /* TiktokFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiktokFeedView.swift; sourceTree = "<group>"; };
+		5A90C72A2DFA1BEA00E7E3E0 /* nmdpMatchMeSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = nmdpMatchMeSwiftUI.entitlements; sourceTree = "<group>"; };
+		5A90C7332DFA216F00E7E3E0 /* HLAIntegrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLAIntegrationView.swift; sourceTree = "<group>"; };
+		5A90C7352DFA218200E7E3E0 /* NmdpMatchMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NmdpMatchMeApp.swift; sourceTree = "<group>"; };
+		5A90C7372DFA219300E7E3E0 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +97,7 @@
 		5A6A18232DEF82D40078E07D = {
 			isa = PBXGroup;
 			children = (
+				5A90C72A2DFA1BEA00E7E3E0 /* nmdpMatchMeSwiftUI.entitlements */,
 				5A45CB282DF0BE2D004F75CF /* nmdpMatchMeSwiftUI-Info.plist */,
 				5A45CB262DF0BA07004F75CF /* KitScannedView.swift */,
 				5A45CB242DF0B9ED004F75CF /* QRScannerView.swift */,
@@ -104,7 +110,9 @@
 				5A6A18882DEF8A250078E07D /* LoginView.swift */,
 				5A6A18892DEF8A250078E07D /* MatchLikelihoodView.swift */,
 				5A45CB0C2DF09495004F75CF /* ShippingAddressView.swift */,
-				5A6A188A2DEF8A250078E07D /* NmdpMatchMeApp.swift */,
+				5A90C7332DFA216F00E7E3E0 /* HLAIntegrationView.swift */,
+				5A90C7352DFA218200E7E3E0 /* NmdpMatchMeApp.swift */,
+				5A90C7372DFA219300E7E3E0 /* HealthKitManager.swift */,
 				5A6A188B2DEF8A250078E07D /* TiktokFeedView.swift */,
 				5A6A182D2DEF82D40078E07D /* Products */,
 				5A6A186F2DEF837B0078E07D /* nmdpMatchMeSwiftUI-Bridging-Header.h */,
@@ -261,14 +269,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A90C7342DFA216F00E7E3E0 /* HLAIntegrationView.swift in Sources */,
 				5A6A188C2DEF8A250078E07D /* AiChatView.swift in Sources */,
 				5A45CB132DF09B16004F75CF /* MatchAlertView.swift in Sources */,
 				5A6A188D2DEF8A250078E07D /* HlaResultView.swift in Sources */,
 				5A6A188E2DEF8A250078E07D /* MatchLikelihoodView.swift in Sources */,
-				5A6A188F2DEF8A250078E07D /* NmdpMatchMeApp.swift in Sources */,
 				5A6A18902DEF8A250078E07D /* DrugInteractionView.swift in Sources */,
 				5A45CB172DF0A7A3004F75CF /* MatchConfirmationView.swift in Sources */,
 				5A6A18912DEF8A250078E07D /* LoginView.swift in Sources */,
+				5A90C7382DFA219300E7E3E0 /* HealthKitManager.swift in Sources */,
+				5A90C7362DFA218200E7E3E0 /* NmdpMatchMeApp.swift in Sources */,
 				5A45CB272DF0BA07004F75CF /* KitScannedView.swift in Sources */,
 				5A45CB192DF0AA3B004F75CF /* NotNowView.swift in Sources */,
 				5A6A18922DEF8A250078E07D /* TiktokFeedView.swift in Sources */,
@@ -434,6 +444,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = nmdpMatchMeSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LMW3S3LWP4;
@@ -470,6 +481,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = nmdpMatchMeSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LMW3S3LWP4;

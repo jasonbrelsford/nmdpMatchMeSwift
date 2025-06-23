@@ -1,37 +1,23 @@
-
 import SwiftUI
-import UserNotifications
 
 @main
 struct NmdpMatchMeApp: App {
-    init() {
-        requestNotificationPermissions()
-    }
+    // Use the shared HealthKit manager
+    @StateObject private var healthKit = HealthKitManager.shared
 
     var body: some Scene {
         WindowGroup {
-            TabView {
-                NavigationView { LoginView() }
-                    .tabItem { Label("Home", systemImage: "house") }
-
-                NavigationView { TiktokFeedView() }
-                    .tabItem { Label("Feed", systemImage: "play.rectangle") }
-
-                NavigationView { AiChatView() }
-                    .tabItem { Label("Ask AI", systemImage: "brain.head.profile") }
-            }
+            // Your root view(s) here
+            MatchLikelihoodView()
+                // Ask for permissions when the app launches
+                .onAppear {
+                    healthKit.requestHealthKitPermissions { success, error in
+                        if let error = error {
+                            print("HealthKit auth error: \(error)")
+                        }
+                    }
+                }
+                .environmentObject(healthKit)
         }
-    }
-
-    func requestNotificationPermissions() {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
-            if granted {
-                print("✅ Notifications allowed")
-            } else {
-                print("❌ Notifications denied")
-            }
-        }
-
-        UIApplication.shared.registerForRemoteNotifications()
     }
 }
