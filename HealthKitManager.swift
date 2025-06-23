@@ -41,8 +41,8 @@ final class HealthKitManager: ObservableObject {
 
         // Metadata: LOINC + custom allele key
         let metadata: [String: Any] = [
-            "com.yourcompany.app.loincCode": loincCode,
-            "com.yourcompany.app.hlaAllele": allele
+            "com.nmdpMatchMeSwiftUI.nmdpMatchMeSwiftUI.loincCode": loincCode,
+            "com.nmdpMatchMeSwiftUI.nmdpMatchMeSwiftUI.hlaAllele": allele
         ]
 
 
